@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import HomePicture from "../Resources/home.jpg";
-import { Link } from "react-router-dom";
+
 class Home extends Component {
     render() {
         return (
@@ -17,7 +17,7 @@ class Home extends Component {
                     <div className="home-name-wrapper" style={{ width: '100vw', height: '100vh' }}>
                         <div className="author">
                             <h3>Charles <span className="name-deco"> Onuorah</span></h3>
-                            <p className="description-work">full-stack developer, Programmer, Mobile app developer</p>
+                            <p className="description-work">Full-stack developer, Programmer, Mobile app developer</p>
                             <p className="social-icons">
                                 <div><a href="https://twitter.com/prince_charlex"><i class="fab fa-twitter"></i></a></div>
                                 <div><a href="https://www.linkedin.com/in/charles-onuorah-727a01100/"><i class="fab fa-linkedin"></i></a></div>
