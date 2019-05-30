@@ -3,7 +3,7 @@ html, body{
     overflow-x: hidden;
     padding: 0;
     margin: 0;
-    font-family: roboto, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: roboto, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
 }
 
 .container-fluid{
@@ -14,6 +14,7 @@ html, body{
     top:0;
     left:0;
     width: 100%;
+    z-index: 1000;
 }
 
 .header .wrapper{
@@ -30,6 +31,18 @@ html, body{
 .home-name-wrapper{
     background: rgba(95, 93, 93, 0.5);
     padding-top: 200px;
+}
+@media screen and (max-width: 700px){
+    .author{
+        width: 90% !important;
+        margin: 0 auto !important;
+    }
+    .home-name-wrapper{
+        padding-top: 120px;
+    }
+    .avatar-container, .links-container{
+        min-height: 50% !important;
+    }
 }
 .author{
     margin-left: 72px;
@@ -57,4 +70,69 @@ html, body{
 
 .social-icons div {
     margin-right: 16px;
+}
+
+.modal-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(0,0,0,0.5);
+    z-index: 500;
+    min-height: 100vh;
+    width: 100vw;
+}
+.modal-container{
+    width: 100vw;
+    height:100vh;
+}
+
+.inner-modal{  
+    position: relative;
+    /* top: 20%; */
+    /* left: 50%; */
+    /* width: 100%; */
+}
+.avatar-container{
+    
+    background: rgb(0,0,0,0.3);
+}
+
+.avatar-container, .links-container{
+    display:flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.links-container{
+
+    background: rgb(0,0,0,0.7);
+}
+.no-padding{
+    padding: 0 !important;
+}
+.modal-view{
+}
+ul{
+
+}
+
+ul li{
+    text-decoration: none;
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+.active{
+    border-bottom: 10px solid #ed7814;
+}
+ul li a {
+    color:#fff;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+ul li a:hover{
+    text-decoration: none;
+    color: #ed7814;
 }
